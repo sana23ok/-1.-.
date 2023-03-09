@@ -1,0 +1,15 @@
+# ninja log v5
+2	282	7000831643765008	CMakeFiles/Labaratorna_N1.dir/main.cpp.obj	830cf1f9b4dbb355
+3	292	7000043795997571	CMakeFiles/Labaratorna_N1.dir/pointer_handler.cpp.obj	1dea2f2456f8fdc1
+6	635	7000831647291235	CMakeFiles/Labaratorna_N1.dir/stream_handler.cpp.obj	fcf4f13ab4b9bd7
+3	261	7000863070948979	CMakeFiles/Labaratorna_N1.dir/pointer_handler2.cpp.obj	6959a3354dfeb2c6
+261	349	7000863071794661	Labaratorna_N1.exe	37fafe025b8c38d6
+57	125	7000646934134847	test1.exe	9cbcdcb105654496
+1	57	7000646933478436	CMakeFiles/test1.dir/test1.cpp.obj	e1148e3bed1c113a
+7	279	7000867710410233	CMakeFiles/Labaratorna_N1.dir/main.cpp.obj	830cf1f9b4dbb355
+3	297	7000867710593610	CMakeFiles/Labaratorna_N1.dir/pointer_handler.cpp.obj	1dea2f2456f8fdc1
+297	394	7000867711524488	Labaratorna_N1.exe	9d1567e487a6ad76
+3	608	7000875079551189	CMakeFiles/Labaratorna_N1.dir/stream_handler.cpp.obj	fcf4f13ab4b9bd7
+608	707	7000875080523861	Labaratorna_N1.exe	9d1567e487a6ad76
+2	580	7000875704744273	CMakeFiles/Labaratorna_N1.dir/stream_handler.cpp.obj	fcf4f13ab4b9bd7
+580	666	7000875705572154	Labaratorna_N1.exe	9d1567e487a6ad76

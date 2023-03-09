@@ -1,0 +1,3 @@
+llllll
+kkkkkkk
+Null pointer.

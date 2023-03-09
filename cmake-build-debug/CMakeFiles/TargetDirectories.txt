@@ -1,0 +1,4 @@
+C:/Users/oksan/CLionProjects/Labaratorna_N1/cmake-build-debug/CMakeFiles/Labaratorna_N1.dir
+C:/Users/oksan/CLionProjects/Labaratorna_N1/cmake-build-debug/CMakeFiles/test1.dir
+C:/Users/oksan/CLionProjects/Labaratorna_N1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/oksan/CLionProjects/Labaratorna_N1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
