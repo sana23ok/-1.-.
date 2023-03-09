@@ -5,5 +5,5 @@ Last line.
 Line to sort a b w wa wb.
 line t
 line without upper case.
-test a.
-Line without dot
+
+

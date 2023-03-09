@@ -1,2 +1,3 @@
 file line of test the
 a b line sort to w wa wb
+case line upper without

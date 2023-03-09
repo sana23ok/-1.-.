@@ -7,3 +7,4 @@ line t
 line without upper case.
 test a.
 Line without dot
+Last line.

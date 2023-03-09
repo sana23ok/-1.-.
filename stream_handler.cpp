@@ -31,7 +31,7 @@ void writeInFile(ofstream &file){
     if(file.is_open()){
         cin.ignore(256, '\n');
         do{
-            cout<<"\nLine["<<iter+1<<"]:"<<endl;
+            //cout<<"\nLine["<<iter+1<<"]:"<<endl;
             getline(cin, line);
             if(line == "*") break;
             file<<line<<endl;
@@ -109,9 +109,23 @@ string rearange(const string& str){
     return ordered;
 }
 
-int checkPunct(char arr[], int size){
-    if(/*(f!=0) && */ arr[size-1] == '.') return 1;
-    else return 0;
+void checkPunct(char arr[], int size, int &res){
+    int i=0;
+    if(islower(arr[0])){
+        res = 0;
+    } else{
+        do {
+            if ((arr[i] == '.' || arr[i] == '?' || arr[i] == '!') && (i != size-1)) {
+                res = 0;
+                break;
+            }else if ((arr[i] == '.' || arr[i] == '?' || arr[i] == '!') && (i == size-1)) {
+                res = 1;
+            } else{
+                res = 0;
+            }
+            i++;
+        }while(i<size);
+    }
 }
 
 void convertToCharArr(string line, char ch_arr[], int &len){
@@ -180,6 +194,7 @@ void task(string path){
 
     ifstream file;
     file.open(path);
+    cout<<"\n--------------Records----------------\n";
     if(file.is_open()) readFromFile(file);
     else cout<<"Error of reading the file";
     file.close();
@@ -199,9 +214,10 @@ void createNewFile(ifstream &infile, const string& name){
         int k = 0;
         for (int i = 0; i < j; i++) {
             convertToCharArr(rec[i], arr, len);
-            int res = checkPunct(arr, len);
-//            cout<<rec[i];
-            if (res) {
+            int res = 0;
+            checkPunct(arr, len, res);
+            //cout<<rec[i];
+            if(res==1){
                 string tmp = strClear(arr, rec[i], len);
                 updated[k] = rearange(tmp);
                 k++;

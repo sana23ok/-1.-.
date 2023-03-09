@@ -1,9 +1,10 @@
 Test line of the file.
 Test line of the file.
 Line one. Line two.
-Last line.
-Line to sort a b w wa wb.
+
+Last line.Line to sort a b w wa wb.
 line t
 line without upper case.
 test a.
 Line without dot
+Line to add.

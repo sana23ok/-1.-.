@@ -106,12 +106,33 @@ void arrange(FILE* nfile, char *line, size_t n, int size){
 }
 
 void checkLine(FILE* nfile, char *line, int fileLen){
-    size_t len = strlen(line);
-    if(line[len-2]=='.'){
-        int lenC=0;
-        convertLine(line, lenC);
-        arrange(nfile, line, lenC, fileLen);//len-2
+    size_t size = strlen(line);
+//    cout<<size<<line[size-2]<<endl;
+    int i=0, res=0;
+
+    if(islower(line[0])){
+        res = 0;
+    } else{
+        do {
+            if ((line[i] == '.' || line[i] == '?' || line[i] == '!') && (i != size-2)) {
+                res = 0;
+                break;
+            }else if ((line[i] == '.' || line[i] == '?' || line[i] == '!') && (i == size-2)) {
+                int lenC=0;
+                convertLine(line, lenC);
+                arrange(nfile, line, lenC, fileLen);//len-2
+            } else{
+                res = 0;
+            }
+            i++;
+        }while(i<size);
     }
+
+//    if(res==1){
+//        int lenC=0;
+//        convertLine(line, lenC);
+//        arrange(nfile, line, lenC, fileLen);//len-2
+//    }
 }
 
 void workWithRec(FILE* file, char name[]){
